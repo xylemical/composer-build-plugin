@@ -1,0 +1,29 @@
+{
+  "name": "xylemical/composer-build-plugin",
+  "description": "Provides automated build processes for dependent Composer packages.",
+  "keywords": ["composer", "build", "package", "integration", "plugin", "composer-plugin"],
+  "homepage": "https://github.com/xylemical/composer-build-plugin",
+  "license": "MIT",
+  "type": "composer-plugin",
+  "require": {
+    "php": ">=5.4",
+    "composer-plugin-api": "^1"
+  },
+  "require-dev": {
+    "composer/composer": "^1",
+    "phpunit/phpunit": "^4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xylemical\\Composer\\Build\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Xylemical\\Composer\\Build\\": "tests"
+    }
+  },
+  "extra": {
+    "class": "Xylemical\\Composer\\Build\\PluginComposer"
+  }
+}
