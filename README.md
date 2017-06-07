@@ -19,8 +19,8 @@ Add classes that implement `\Xylemical\Composer\Build\PluginInterface` to the bu
 {
     "extra": {
         "build-plugins": [
-            "Xylemical\Composer\Build\Plugins\Npm",
-            "Xylemical\Composer\Build\Plugins\Grunt"
+            "Xylemical\\Composer\\Build\\Plugin\\Npm",
+            "Xylemical\\Composer\\Build\\Plugin\\Grunt"
         ]
     }
 }
